@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 
 class Ser1  {
 	/**
-*
+* My Comment
 */
 //	private static final long serialVersionUID = 1L;
 	String s1;
