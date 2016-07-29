@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Map;
@@ -44,8 +45,12 @@ import java.util.TreeSet;
  */
 //@formatter:on
 
-public class Woerterbuch {
+public class Woerterbuch implements Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private NavigableMap<String, NavigableSet<String>> dictionary;
 	private String srcLanguage;
 	private String dstLanguage;
