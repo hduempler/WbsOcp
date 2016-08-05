@@ -1,0 +1,5 @@
+class,interface,enum,for,case,switch,while,do,if,else,package,import
+boolean,byte,short,char,long,int,double,float,char,instanceof
+default,break,volatile,transient,static,public,protected,private
+extends,implements,return,void,try,catch,finally
+native,synchronized,abstract,final,strictfp,goto,const
