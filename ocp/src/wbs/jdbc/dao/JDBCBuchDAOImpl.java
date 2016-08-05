@@ -4,13 +4,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
 public class JDBCBuchDAOImpl implements IBuchDAO {
-
 
 	final String insertSQL = "INSERT INTO Buch VALUES (?,?,?,?)";
 	final String updateSQL = "UPDATE Buch set ISBN = ?, TITEL= ?, AUTOR= ?, PREIS= ? WHERE ISBN = ?";
@@ -51,8 +51,8 @@ public class JDBCBuchDAOImpl implements IBuchDAO {
 	public List<Buch> findAll() throws PersistenceException {
 		List<Buch> list = new ArrayList<>();
 		try (Connection conn = DAOHelper.getConnection();
-				PreparedStatement pstmtsel = conn.prepareStatement(selectSQL);) {
-			ResultSet res = pstmtsel.executeQuery(selectSQL);
+				Statement stmt = conn.createStatement()) {
+			ResultSet res = stmt.executeQuery(selectSQL);
 			while (res.next()) {
 				Buch buch = new Buch();
 				buch.setIsbn(res.getString(1));
