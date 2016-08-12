@@ -1,0 +1,25 @@
+<!ATTLIST connection
+ driver CDATA #REQUIRED
+ url CDATA #REQUIRED
+ user CDATA #REQUIRED
+ password CDATA #REQUIRED
+>
+
+<!ATTLIST tableMapping
+ className CDATA #REQUIRED
+ tableName CDATA #REQUIRED
+>
+
+<!ATTLIST typeMapping
+ javaType CDATA #REQUIRED
+ sqlType CDATA #REQUIRED
+>
+
+<!ELEMENT tableMapping EMPTY>
+<!ELEMENT typeMapping EMPTY>
+<!ELEMENT typeMappings (typeMapping)+>
+<!ELEMENT tableMappings (tableMapping)+>
+<!ELEMENT connection EMPTY>
+
+<!ELEMENT persistence (connection, tableMappings, typeMappings)>
+

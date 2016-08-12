@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persistence SYSTEM "persistence.dtd" >
+<persistence>
+	<connection driver="com.mysql.jdbc.Driver" password=""
+		url="jdbc:mysql://localhost:3306/jdbc?useUnicode=yes&amp;characterEncoding=UTF-8"
+		user="root" />
+	<tableMappings>
+		<tableMapping className="wbs.jdbc.dao.Buch" tableName="Buch" />
+		<tableMapping className="wbs.jdbc.dao.Buch2" tableName="Buch2" />
+		<tableMapping className="wbs.jdbc.dao.Buch3" tableName="Buch3" />
+		<!-- ggf weitere geeignete annotierte klassen -->
+	</tableMappings>
+	<typeMappings>
+		<typeMapping javaType="int" sqlType="integer" />
+		<typeMapping javaType="double" sqlType="decimal(8,2)" />
+		<typeMapping javaType="String" sqlType="varchar(255)" />
+		<!-- ggf weitere geeignete type mappings -->
+	</typeMappings>
+</persistence>

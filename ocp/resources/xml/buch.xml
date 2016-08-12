@@ -1,0 +1,754 @@
+<?xml version="1.0"?>
+<webRowSet xmlns="http://java.sun.com/xml/ns/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/jdbc http://java.sun.com/xml/ns/jdbc/webrowset.xsd">
+  <properties>
+    <command>select * from buch</command>
+    <concurrency>1008</concurrency>
+    <datasource><null/></datasource>
+    <escape-processing>true</escape-processing>
+    <fetch-direction>1000</fetch-direction>
+    <fetch-size>0</fetch-size>
+    <isolation-level>2</isolation-level>
+    <key-columns>
+    </key-columns>
+    <map>
+    </map>
+    <max-field-size>0</max-field-size>
+    <max-rows>0</max-rows>
+    <query-timeout>0</query-timeout>
+    <read-only>true</read-only>
+    <rowset-type>ResultSet.TYPE_SCROLL_INSENSITIVE</rowset-type>
+    <show-deleted>false</show-deleted>
+    <table-name>buch</table-name>
+    <url>jdbc:mysql://localhost:3306/jdbc?useUnicode=yes&amp;characterEncoding=UTF-8</url>
+    <sync-provider>
+      <sync-provider-name>com.sun.rowset.providers.RIOptimisticProvider</sync-provider-name>
+      <sync-provider-vendor>Oracle Corporation</sync-provider-vendor>
+      <sync-provider-version>1.0</sync-provider-version>
+      <sync-provider-grade>2</sync-provider-grade>
+      <data-source-lock>1</data-source-lock>
+    </sync-provider>
+  </properties>
+  <metadata>
+    <column-count>4</column-count>
+    <column-definition>
+      <column-index>1</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>0</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>isbn</column-label>
+      <column-name>isbn</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>2</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>0</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>autor</column-label>
+      <column-name>autor</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>3</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>1</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>titel</column-label>
+      <column-name>titel</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>4</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>true</case-sensitive>
+      <currency>false</currency>
+      <nullable>1</nullable>
+      <signed>true</signed>
+      <searchable>true</searchable>
+      <column-display-size>10</column-display-size>
+      <column-label>preis</column-label>
+      <column-name>preis</column-name>
+      <schema-name></schema-name>
+      <column-precision>8</column-precision>
+      <column-scale>2</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>3</column-type>
+      <column-type-name>DECIMAL</column-type-name>
+    </column-definition>
+  </metadata>
+  <data>
+    <currentRow>
+      <columnValue>1111111111111</columnValue>
+      <columnValue>Autor 1</columnValue>
+      <columnValue>Titel 1</columnValue>
+      <columnValue>1.11</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>2222222222222</columnValue>
+      <columnValue>Autor</columnValue>
+      <columnValue>Titel</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>2222222222222</columnValue>
+      <columnValue>Autor 2</columnValue>
+      <columnValue>Titel 3</columnValue>
+      <columnValue>2.22</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9780751565355</columnValue>
+      <columnValue>Rowling, Joanne K.; Thorne, Jack; Tiffany, John</columnValue>
+      <columnValue>Harry Potter and the Cursed Child. Pts. 1 + 2</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783100800077</columnValue>
+      <columnValue>Trojanow, Ilija</columnValue>
+      <columnValue>Meine Olympiade</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069587</columnValue>
+      <columnValue>Wells, Benedict</columnValue>
+      <columnValue>Vom Ende der Einsamkeit</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069662</columnValue>
+      <columnValue>Irving, John</columnValue>
+      <columnValue>Straße der Wunder</columnValue>
+      <columnValue>26.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069693</columnValue>
+      <columnValue>Leon, Donna</columnValue>
+      <columnValue>Ewige Jugend</columnValue>
+      <columnValue>24.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783351036416</columnValue>
+      <columnValue>Fallada, Hans</columnValue>
+      <columnValue>Kleiner Mann - was nun?</columnValue>
+      <columnValue>22.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783406697647</columnValue>
+      <columnValue>Bakewell, Sarah</columnValue>
+      <columnValue>Das Café der Existenzialisten</columnValue>
+      <columnValue>24.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783421046932</columnValue>
+      <columnValue>Sarrazin, Thilo</columnValue>
+      <columnValue>Wunschdenken</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783423280686</columnValue>
+      <columnValue>Marshall, Tim</columnValue>
+      <columnValue>Die Macht der Geographie</columnValue>
+      <columnValue>22.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783426199404</columnValue>
+      <columnValue>Klüpfel, Volker; Kobr, Michael</columnValue>
+      <columnValue>In der ersten Reihe sieht man Meer</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783442312726</columnValue>
+      <columnValue>Fielding, Joy</columnValue>
+      <columnValue>Die Schwester</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446246010</columnValue>
+      <columnValue>Heidenreich, Elke</columnValue>
+      <columnValue>Alles kein Zufall</columnValue>
+      <columnValue>19.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446249240</columnValue>
+      <columnValue>Gardam, Jane</columnValue>
+      <columnValue>Ein untadeliger Mann</columnValue>
+      <columnValue>22.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446250741</columnValue>
+      <columnValue>Gardam, Jane</columnValue>
+      <columnValue>Eine treue Frau</columnValue>
+      <columnValue>21.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446252684</columnValue>
+      <columnValue>Cline, Emma</columnValue>
+      <columnValue>The Girls</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783453280670</columnValue>
+      <columnValue>Wohlleben, Peter</columnValue>
+      <columnValue>Das geheime Leben der Bäume</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783453280823</columnValue>
+      <columnValue>Wohlleben, Peter</columnValue>
+      <columnValue>Das Seelenleben der Tiere</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783455600414</columnValue>
+      <columnValue>Delacourt, Grégoire</columnValue>
+      <columnValue>Die vier Jahreszeiten des Sommers</columnValue>
+      <columnValue>18.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783458176008</columnValue>
+      <columnValue>Schmid, Wilhelm</columnValue>
+      <columnValue>Gelassenheit</columnValue>
+      <columnValue>8.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048001</columnValue>
+      <columnValue>Bogdan, Isabel</columnValue>
+      <columnValue>Der Pfau</columnValue>
+      <columnValue>18.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048285</columnValue>
+      <columnValue>Meyerhoff, Joachim</columnValue>
+      <columnValue>Ach, diese Lücke, diese entsetzliche Lücke</columnValue>
+      <columnValue>21.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048858</columnValue>
+      <columnValue>Stuckrad-Barre, Benjamin von</columnValue>
+      <columnValue>Panikherz</columnValue>
+      <columnValue>22.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783466371471</columnValue>
+      <columnValue>Schießler, Rainer M.</columnValue>
+      <columnValue>Himmel, Herrgott, Sakrament</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783492057646</columnValue>
+      <columnValue>Dicker, Joël</columnValue>
+      <columnValue>Die Geschichte der Baltimores</columnValue>
+      <columnValue>24.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783551583277</columnValue>
+      <columnValue>Aveyard, Victoria</columnValue>
+      <columnValue>Die Farben des Blutes. Gläsernes Schwert</columnValue>
+      <columnValue>21.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783570585627</columnValue>
+      <columnValue>Jonasson, Jonas</columnValue>
+      <columnValue>Mörder Anders und seine Freunde nebst dem einen oder anderen Feind</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783593505169</columnValue>
+      <columnValue>Wagenknecht, Sahra</columnValue>
+      <columnValue>Reichtum ohne Gier</columnValue>
+      <columnValue>19.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783630874876</columnValue>
+      <columnValue>Zeh, Juli</columnValue>
+      <columnValue>Unterleuten</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783710900006</columnValue>
+      <columnValue>Dalai Lama; Alt, Franz</columnValue>
+      <columnValue>Der Appell des Dalai Lama an die Welt</columnValue>
+      <columnValue>4.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783764506025</columnValue>
+      <columnValue>Leiris, Antoine</columnValue>
+      <columnValue>Meinen Hass bekommt ihr nicht</columnValue>
+      <columnValue>12.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783778781838</columnValue>
+      <columnValue>Brahm, Ajahn</columnValue>
+      <columnValue>Die Kuh, die weinte</columnValue>
+      <columnValue>15.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783805250948</columnValue>
+      <columnValue>Moyes, Jojo</columnValue>
+      <columnValue>Ein ganz neues Leben</columnValue>
+      <columnValue>19.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783813506471</columnValue>
+      <columnValue>Hansen, Dörte</columnValue>
+      <columnValue>Altes Land</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783827500595</columnValue>
+      <columnValue>Hilmes, Oliver</columnValue>
+      <columnValue>Berlin 1936</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783862655298</columnValue>
+      <columnValue>Spencer, Bud</columnValue>
+      <columnValue>Was ich euch noch sagen wollte ...</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783869711263</columnValue>
+      <columnValue>Preisendörfer, Bruno</columnValue>
+      <columnValue>Als unser Deutsch erfunden wurde</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783869950853</columnValue>
+      <columnValue>Hahne, Peter</columnValue>
+      <columnValue>Finger weg von unserem Bargeld!</columnValue>
+      <columnValue>10.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783871348280</columnValue>
+      <columnValue>Schönburg, Alexander von</columnValue>
+      <columnValue>Weltgeschichte to go</columnValue>
+      <columnValue>18.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783905951790</columnValue>
+      <columnValue>Feldman, Deborah</columnValue>
+      <columnValue>Un-orthodox</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783945877005</columnValue>
+      <columnValue>Krücken, Stefan</columnValue>
+      <columnValue>Sturmwarnung</columnValue>
+      <columnValue>29.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>wefwefewf</columnValue>
+      <columnValue>Autorsfsfsddf</columnValue>
+      <columnValue>Titelqwfqw</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+  </data>
+</webRowSet>
+<?xml version="1.0"?>
+<webRowSet xmlns="http://java.sun.com/xml/ns/jdbc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/jdbc http://java.sun.com/xml/ns/jdbc/webrowset.xsd">
+  <properties>
+    <command>select * from buch</command>
+    <concurrency>1008</concurrency>
+    <datasource><null/></datasource>
+    <escape-processing>true</escape-processing>
+    <fetch-direction>1000</fetch-direction>
+    <fetch-size>0</fetch-size>
+    <isolation-level>2</isolation-level>
+    <key-columns>
+    </key-columns>
+    <map>
+    </map>
+    <max-field-size>0</max-field-size>
+    <max-rows>0</max-rows>
+    <query-timeout>0</query-timeout>
+    <read-only>true</read-only>
+    <rowset-type>ResultSet.TYPE_SCROLL_INSENSITIVE</rowset-type>
+    <show-deleted>true</show-deleted>
+    <table-name>buch</table-name>
+    <url>jdbc:mysql://localhost:3306/jdbc?useUnicode=yes&amp;characterEncoding=UTF-8</url>
+    <sync-provider>
+      <sync-provider-name>com.sun.rowset.providers.RIOptimisticProvider</sync-provider-name>
+      <sync-provider-vendor>Oracle Corporation</sync-provider-vendor>
+      <sync-provider-version>1.0</sync-provider-version>
+      <sync-provider-grade>2</sync-provider-grade>
+      <data-source-lock>1</data-source-lock>
+    </sync-provider>
+  </properties>
+  <metadata>
+    <column-count>4</column-count>
+    <column-definition>
+      <column-index>1</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>0</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>isbn</column-label>
+      <column-name>isbn</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>2</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>0</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>autor</column-label>
+      <column-name>autor</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>3</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>false</case-sensitive>
+      <currency>false</currency>
+      <nullable>1</nullable>
+      <signed>false</signed>
+      <searchable>true</searchable>
+      <column-display-size>255</column-display-size>
+      <column-label>titel</column-label>
+      <column-name>titel</column-name>
+      <schema-name></schema-name>
+      <column-precision>255</column-precision>
+      <column-scale>0</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>12</column-type>
+      <column-type-name>VARCHAR</column-type-name>
+    </column-definition>
+    <column-definition>
+      <column-index>4</column-index>
+      <auto-increment>false</auto-increment>
+      <case-sensitive>true</case-sensitive>
+      <currency>false</currency>
+      <nullable>1</nullable>
+      <signed>true</signed>
+      <searchable>true</searchable>
+      <column-display-size>10</column-display-size>
+      <column-label>preis</column-label>
+      <column-name>preis</column-name>
+      <schema-name></schema-name>
+      <column-precision>8</column-precision>
+      <column-scale>2</column-scale>
+      <table-name>buch</table-name>
+      <catalog-name>jdbc</catalog-name>
+      <column-type>3</column-type>
+      <column-type-name>DECIMAL</column-type-name>
+    </column-definition>
+  </metadata>
+  <data>
+    <currentRow>
+      <columnValue>1111111111111</columnValue>
+      <columnValue>Autor 1</columnValue>
+      <columnValue>Titel 1</columnValue>
+      <columnValue>1.11</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>2222222222222</columnValue>
+      <columnValue>Autor</columnValue>
+      <columnValue>Titel</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>2222222222222</columnValue>
+      <columnValue>Autor 2</columnValue>
+      <columnValue>Titel 3</columnValue>
+      <columnValue>2.22</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9780751565355</columnValue>
+      <columnValue>Rowling, Joanne K.; Thorne, Jack; Tiffany, John</columnValue>
+      <columnValue>Harry Potter and the Cursed Child. Pts. 1 + 2</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783100800077</columnValue>
+      <columnValue>Trojanow, Ilija</columnValue>
+      <columnValue>Meine Olympiade</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069587</columnValue>
+      <columnValue>Wells, Benedict</columnValue>
+      <columnValue>Vom Ende der Einsamkeit</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069662</columnValue>
+      <columnValue>Irving, John</columnValue>
+      <columnValue>Straße der Wunder</columnValue>
+      <columnValue>26.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783257069693</columnValue>
+      <columnValue>Leon, Donna</columnValue>
+      <columnValue>Ewige Jugend</columnValue>
+      <columnValue>24.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783351036416</columnValue>
+      <columnValue>Fallada, Hans</columnValue>
+      <columnValue>Kleiner Mann - was nun?</columnValue>
+      <columnValue>22.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783406697647</columnValue>
+      <columnValue>Bakewell, Sarah</columnValue>
+      <columnValue>Das Café der Existenzialisten</columnValue>
+      <columnValue>24.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783421046932</columnValue>
+      <columnValue>Sarrazin, Thilo</columnValue>
+      <columnValue>Wunschdenken</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783423280686</columnValue>
+      <columnValue>Marshall, Tim</columnValue>
+      <columnValue>Die Macht der Geographie</columnValue>
+      <columnValue>22.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783426199404</columnValue>
+      <columnValue>Klüpfel, Volker; Kobr, Michael</columnValue>
+      <columnValue>In der ersten Reihe sieht man Meer</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783442312726</columnValue>
+      <columnValue>Fielding, Joy</columnValue>
+      <columnValue>Die Schwester</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446246010</columnValue>
+      <columnValue>Heidenreich, Elke</columnValue>
+      <columnValue>Alles kein Zufall</columnValue>
+      <columnValue>19.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446249240</columnValue>
+      <columnValue>Gardam, Jane</columnValue>
+      <columnValue>Ein untadeliger Mann</columnValue>
+      <columnValue>22.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446250741</columnValue>
+      <columnValue>Gardam, Jane</columnValue>
+      <columnValue>Eine treue Frau</columnValue>
+      <columnValue>21.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783446252684</columnValue>
+      <columnValue>Cline, Emma</columnValue>
+      <columnValue>The Girls</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783453280670</columnValue>
+      <columnValue>Wohlleben, Peter</columnValue>
+      <columnValue>Das geheime Leben der Bäume</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783453280823</columnValue>
+      <columnValue>Wohlleben, Peter</columnValue>
+      <columnValue>Das Seelenleben der Tiere</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783455600414</columnValue>
+      <columnValue>Delacourt, Grégoire</columnValue>
+      <columnValue>Die vier Jahreszeiten des Sommers</columnValue>
+      <columnValue>18.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783458176008</columnValue>
+      <columnValue>Schmid, Wilhelm</columnValue>
+      <columnValue>Gelassenheit</columnValue>
+      <columnValue>8.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048001</columnValue>
+      <columnValue>Bogdan, Isabel</columnValue>
+      <columnValue>Der Pfau</columnValue>
+      <columnValue>18.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048285</columnValue>
+      <columnValue>Meyerhoff, Joachim</columnValue>
+      <columnValue>Ach, diese Lücke, diese entsetzliche Lücke</columnValue>
+      <columnValue>21.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783462048858</columnValue>
+      <columnValue>Stuckrad-Barre, Benjamin von</columnValue>
+      <columnValue>Panikherz</columnValue>
+      <columnValue>22.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783466371471</columnValue>
+      <columnValue>Schießler, Rainer M.</columnValue>
+      <columnValue>Himmel, Herrgott, Sakrament</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783492057646</columnValue>
+      <columnValue>Dicker, Joël</columnValue>
+      <columnValue>Die Geschichte der Baltimores</columnValue>
+      <columnValue>24.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783551583277</columnValue>
+      <columnValue>Aveyard, Victoria</columnValue>
+      <columnValue>Die Farben des Blutes. Gläsernes Schwert</columnValue>
+      <columnValue>21.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783570585627</columnValue>
+      <columnValue>Jonasson, Jonas</columnValue>
+      <columnValue>Mörder Anders und seine Freunde nebst dem einen oder anderen Feind</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783593505169</columnValue>
+      <columnValue>Wagenknecht, Sahra</columnValue>
+      <columnValue>Reichtum ohne Gier</columnValue>
+      <columnValue>19.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783630874876</columnValue>
+      <columnValue>Zeh, Juli</columnValue>
+      <columnValue>Unterleuten</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783710900006</columnValue>
+      <columnValue>Dalai Lama; Alt, Franz</columnValue>
+      <columnValue>Der Appell des Dalai Lama an die Welt</columnValue>
+      <columnValue>4.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783764506025</columnValue>
+      <columnValue>Leiris, Antoine</columnValue>
+      <columnValue>Meinen Hass bekommt ihr nicht</columnValue>
+      <columnValue>12.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783778781838</columnValue>
+      <columnValue>Brahm, Ajahn</columnValue>
+      <columnValue>Die Kuh, die weinte</columnValue>
+      <columnValue>15.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783805250948</columnValue>
+      <columnValue>Moyes, Jojo</columnValue>
+      <columnValue>Ein ganz neues Leben</columnValue>
+      <columnValue>19.95</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783813506471</columnValue>
+      <columnValue>Hansen, Dörte</columnValue>
+      <columnValue>Altes Land</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783827500595</columnValue>
+      <columnValue>Hilmes, Oliver</columnValue>
+      <columnValue>Berlin 1936</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783862655298</columnValue>
+      <columnValue>Spencer, Bud</columnValue>
+      <columnValue>Was ich euch noch sagen wollte ...</columnValue>
+      <columnValue>19.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783869711263</columnValue>
+      <columnValue>Preisendörfer, Bruno</columnValue>
+      <columnValue>Als unser Deutsch erfunden wurde</columnValue>
+      <columnValue>24.99</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783869950853</columnValue>
+      <columnValue>Hahne, Peter</columnValue>
+      <columnValue>Finger weg von unserem Bargeld!</columnValue>
+      <columnValue>10.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783871348280</columnValue>
+      <columnValue>Schönburg, Alexander von</columnValue>
+      <columnValue>Weltgeschichte to go</columnValue>
+      <columnValue>18.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783905951790</columnValue>
+      <columnValue>Feldman, Deborah</columnValue>
+      <columnValue>Un-orthodox</columnValue>
+      <columnValue>22.00</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>9783945877005</columnValue>
+      <columnValue>Krücken, Stefan</columnValue>
+      <columnValue>Sturmwarnung</columnValue>
+      <columnValue>29.90</columnValue>
+    </currentRow>
+    <currentRow>
+      <columnValue>wefwefewf</columnValue>
+      <columnValue>Autorsfsfsddf</columnValue>
+      <columnValue>Titelqwfqw</columnValue>
+      <columnValue>20.00</columnValue>
+    </currentRow>
+  </data>
+</webRowSet>
