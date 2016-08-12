@@ -1,0 +1,164 @@
+Ich heiße: Thread-0
+Meine Zahl ist: 816429267
+Und dies sind die Primfaktoren:
+3
+3
+3
+17
+197
+9029
+----------------------------------
+Ich heiße: Thread-2
+Meine Zahl ist: 748657641
+Und dies sind die Primfaktoren:
+3
+79
+263
+12011
+----------------------------------
+Ich heiße: Thread-4
+Meine Zahl ist: 803315987
+Und dies sind die Primfaktoren:
+193
+563
+7393
+----------------------------------
+Ich heiße: Thread-5
+Meine Zahl ist: 873416715
+Und dies sind die Primfaktoren:
+3
+5
+5881
+9901
+----------------------------------
+Ich heiße: Thread-1
+Meine Zahl ist: 504331303
+Und dies sind die Primfaktoren:
+7
+1531
+47059
+----------------------------------
+Ich heiße: Thread-6
+Meine Zahl ist: 526176464
+Und dies sind die Primfaktoren:
+2
+2
+2
+2
+11
+29
+103091
+----------------------------------
+Ich heiße: Thread-8
+Meine Zahl ist: 720381855
+Und dies sind die Primfaktoren:
+3
+5
+1327
+36191
+----------------------------------
+Ich heiße: Thread-7
+Meine Zahl ist: 830772064
+Und dies sind die Primfaktoren:
+2
+2
+2
+2
+2
+971
+26737
+----------------------------------
+Ich heiße: Thread-10
+Meine Zahl ist: 673712145
+Und dies sind die Primfaktoren:
+3
+3
+5
+179
+83639
+----------------------------------
+Ich heiße: Thread-14
+Meine Zahl ist: 867203473
+Und dies sind die Primfaktoren:
+17
+101
+157
+3217
+----------------------------------
+Ich heiße: Thread-11
+Meine Zahl ist: 575482564
+Und dies sind die Primfaktoren:
+2
+2
+19
+67
+113017
+----------------------------------
+Ich heiße: Thread-16
+Meine Zahl ist: 641172459
+Und dies sind die Primfaktoren:
+3
+17
+2963
+4243
+----------------------------------
+Ich heiße: Thread-15
+Meine Zahl ist: 611322464
+Und dies sind die Primfaktoren:
+2
+2
+2
+2
+2
+41
+465947
+----------------------------------
+Ich heiße: Thread-19
+Meine Zahl ist: 741597892
+Und dies sind die Primfaktoren:
+2
+2
+7
+19
+1393981
+----------------------------------
+Ich heiße: Thread-13
+Meine Zahl ist: 542659683
+Und dies sind die Primfaktoren:
+3
+5101
+35461
+----------------------------------
+Ich heiße: Thread-17
+Meine Zahl ist: 686700281
+Und dies sind die Primfaktoren:
+1153
+595577
+----------------------------------
+Ich heiße: Thread-3
+Meine Zahl ist: 817214740
+Und dies sind die Primfaktoren:
+2
+2
+5
+40860737
+----------------------------------
+Ich heiße: Thread-18
+Meine Zahl ist: 660217758
+Und dies sind die Primfaktoren:
+2
+3
+110036293
+----------------------------------
+Ich heiße: Thread-9
+Meine Zahl ist: 762698765
+Und dies sind die Primfaktoren:
+5
+152539753
+----------------------------------
+Ich heiße: Thread-12
+Meine Zahl ist: 733400799
+Und dies sind die Primfaktoren:
+3
+244466933
+----------------------------------
