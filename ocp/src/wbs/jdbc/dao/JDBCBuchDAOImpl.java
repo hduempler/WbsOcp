@@ -4,17 +4,17 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
 public class JDBCBuchDAOImpl implements IBuchDAO {
 
 	final String insertSQL = "INSERT INTO Buch VALUES (?,?,?,?)";
 	final String updateSQL = "UPDATE Buch set ISBN = ?, TITEL= ?, AUTOR= ?, PREIS= ? WHERE ISBN = ?";
 	final String selectSQL = "SELECT * FROM Buch";
+	final String deleteSQL = "DELETE FROM Buch where ISBN = ?";
 
 	public JDBCBuchDAOImpl() {
 	}
@@ -22,29 +22,61 @@ public class JDBCBuchDAOImpl implements IBuchDAO {
 	@Override
 	public void save(Buch buch) throws PersistenceException {
 		try (Connection conn = DAOHelper.getConnection();
-				PreparedStatement pstmtIns = conn.prepareStatement(insertSQL);
-				PreparedStatement pstmtUpd = conn.prepareStatement(updateSQL);) {
+				PreparedStatement pstmtIns = conn.prepareStatement(insertSQL)) {
 
 			pstmtIns.setString(1, buch.getIsbn());
 			pstmtIns.setString(2, buch.getTitel());
 			pstmtIns.setString(3, buch.getAutor());
 			pstmtIns.setDouble(4, buch.getPreis());
-			try {
-				pstmtIns.execute();
+			pstmtIns.execute();
 
-			} catch (MySQLIntegrityConstraintViolationException e) {
-				pstmtUpd.setString(1, buch.getIsbn());
-				pstmtUpd.setString(2, buch.getTitel());
-				pstmtUpd.setString(3, buch.getAutor());
-				pstmtUpd.setDouble(4, buch.getPreis());
-				pstmtUpd.setString(5, buch.getIsbn());
-				pstmtUpd.execute();
-			}
+		} catch (SQLIntegrityConstraintViolationException e) {
+			System.out.println("ISBN ist schon vorhanden: " + buch.getIsbn());
 
 		} catch (SQLException e) {
 			throw new PersistenceException(e);
 		}
 
+	}
+
+	@Override
+	public void update(Buch buch) throws PersistenceException {
+		try (Connection conn = DAOHelper.getConnection();
+				PreparedStatement pstmtUpd = conn.prepareStatement(updateSQL)) {
+			pstmtUpd.setString(1, buch.getIsbn());
+			pstmtUpd.setString(2, buch.getTitel());
+			pstmtUpd.setString(3, buch.getAutor());
+			pstmtUpd.setDouble(4, buch.getPreis());
+			pstmtUpd.setString(5, buch.getIsbn());
+			pstmtUpd.execute();
+
+		} catch (SQLException e) {
+			throw new PersistenceException(e);
+		}
+
+	}
+
+	@Override
+	public void delete(Buch buch) throws PersistenceException {
+		try (Connection conn = DAOHelper.getConnection();
+				PreparedStatement pstmtUpd = conn.prepareStatement(deleteSQL)) {
+			pstmtUpd.setString(1, buch.getIsbn());
+			pstmtUpd.execute();
+
+		} catch (SQLException e) {
+			throw new PersistenceException(e);
+		}
+	}
+
+	@Override
+	public void delete(String isbn) throws PersistenceException {
+		try (Connection conn = DAOHelper.getConnection();
+				PreparedStatement pstmtUpd = conn.prepareStatement(deleteSQL)) {
+			pstmtUpd.setString(1, isbn);
+			pstmtUpd.execute();
+		} catch (SQLException e) {
+			throw new PersistenceException(e);
+		}
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class ResultSetDemo {
 				Statement statement = connection.createStatement();
 				ResultSet resultSet = statement.executeQuery(sql)) {
 			while (resultSet.next()) {
-				System.out.printf("ISBN: %s;%s: %s; %,.2f Euro%n",resultSet.getString("ISBN").replaceAll("(\\d)(\\d{3})(\\d{5})(\\d)", "$1-$2-$3-$4"),resultSet.getString("AUTOR"),resultSet.getString("TITEL"),resultSet.getDouble("PREIS"));
+				System.out.printf("ISBN: %s;%s: %s; %,.2f Euro%n",resultSet.getString("ISBN").replaceAll("(\\d)(\\d{3})(\\d{5})(\\d)", "$1-$2-$3-$4"),resultSet.getString("AUTOR"),resultSet.getString("TITEL"));
 			}
 		} catch (SQLException sqle) {
 			sqle.printStackTrace();

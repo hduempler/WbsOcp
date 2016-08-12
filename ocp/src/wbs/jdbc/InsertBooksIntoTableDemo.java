@@ -19,9 +19,9 @@ public class InsertBooksIntoTableDemo {
 		String password = "";
 		try (Connection conn = DriverManager.getConnection(url, user, password)) {
 			Statement stmt = conn.createStatement();
-			//stmt.execute("TRUNCATE TABLE Buch");
+			stmt.execute("TRUNCATE TABLE Buch");
 			PreparedStatement pstmt = conn
-					.prepareStatement("INSERT INTO Buch VALUES (?,?,?,?)");
+					.prepareStatement("INSERT INTO Buch (isbn, titel, autor, preis) VALUES (?,?,?,?)");
 			String filename = "resources/io/spiegelbestseller.txt";
 			try (BufferedReader br = new BufferedReader(
 					new FileReader(filename))) {
